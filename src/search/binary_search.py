@@ -1,3 +1,4 @@
+__author__ = "J.R."
 
 
 # find min elements in rotated sorted array
