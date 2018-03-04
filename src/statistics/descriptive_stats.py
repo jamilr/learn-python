@@ -1,6 +1,6 @@
 import math
 
-__author__ = "J.R."
+__author__ = 'J.R.'
 
 
 # find min value in a given array
