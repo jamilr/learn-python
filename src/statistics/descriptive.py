@@ -3,6 +3,7 @@ import math
 __author__ = "J.R."
 
 
+# find min value in a given array
 def min_value(a):
 
     if a is None or len(a) == 0:
@@ -16,6 +17,7 @@ def min_value(a):
     return min_val
 
 
+# find max value in a given array
 def max_value(a):
 
     if a is None or len(a) == 0:
@@ -29,6 +31,7 @@ def max_value(a):
     return max_val
 
 
+# find mode value in a given array
 def mode_value(a):
 
     if a is None or len(a) == 0:
@@ -53,6 +56,7 @@ def mode_value(a):
     return mode_val
 
 
+# find mean value in a given array
 def mean_value(a):
 
     if a is None or len(a) == 0:
@@ -67,6 +71,7 @@ def mean_value(a):
     return mean_val / n
 
 
+# find median value in a given array
 def median_value(a):
 
     if a is None or len(a) == 0:
@@ -79,6 +84,7 @@ def median_value(a):
         return a[n//2]
 
 
+# find sample variance from the given array of data points
 def sample_variance(a):
 
     if a is None or len(a) == 0:
@@ -95,6 +101,7 @@ def sample_variance(a):
     return total_sum / (n - 1)
 
 
+# find sample standard deviation from the given array of data points
 def sample_std_dev(a):
 
     if a is None or len(a) == 0:

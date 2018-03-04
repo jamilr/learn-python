@@ -2,6 +2,7 @@
 __author__ = 'J.R.'
 
 
+# find largest positive sum in a given array
 def max_subarray(a):
     if a is None or len(a) == 0:
         return 0
@@ -16,6 +17,7 @@ def max_subarray(a):
     return max_sum
 
 
+# find largest product in a given array
 def max_product_subarray(a):
     if a is None or len(a) == 0:
         return 0
@@ -35,6 +37,7 @@ def max_product_subarray(a):
     return result
 
 
+# multiply every element to the product of all other elements except self
 def product_except_self(a):
     if a is None or len(a) == 0:
         return 0
@@ -51,6 +54,7 @@ def product_except_self(a):
     return r
 
 
+# find length of the largest sub-array which sum equals to k
 def max_subarray_sum_equals_k(a, k):
     if a is None or len(a) == 0:
         return 0

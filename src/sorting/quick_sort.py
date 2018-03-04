@@ -1,6 +1,9 @@
 from src.sorting.base_sorting import Sorting
 
 
+# QuickSort sorting algorithm implementation using in-place recursive approach
+# Time ~O(nlogn)
+# Mem  ~O(1)
 class QuickSort(Sorting):
 
     def __init__(self):

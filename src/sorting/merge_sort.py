@@ -1,6 +1,9 @@
 from src.sorting.base_sorting import Sorting
 
 
+# MergeSort sorting algorithm implementation using recursive approach with additional array
+# Time ~O(nlogn)
+# Mem  ~O(n)
 class MergeSort(Sorting):
 
     def __init__(self):
