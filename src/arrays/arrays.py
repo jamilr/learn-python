@@ -17,6 +17,21 @@ def max_subarray(a):
     return max_sum
 
 
+# find largest positive sum without using additional array
+def max_sub_array_2(a):
+    if a is None or len(a) == 0:
+        return 0
+    n = len(a)
+    cur_sum = 0
+    max_sum = 0
+    for i in range(n):
+        cur_sum += a[i]
+        if cur_sum < 0:
+            cur_sum = 0
+        elif cur_sum > max_sum:
+            max_sum = cur_sum
+    return max_sum
+
 # find largest product in a given array
 def max_product_subarray(a):
     if a is None or len(a) == 0:
@@ -73,10 +88,12 @@ def max_subarray_sum_equals_k(a, k):
             d_sum[total_sum] = i
     return max_len
 
+
 if __name__ == '__main__':
 
     aa = [1, 3, -4, 0, 8, 1, 2, 3, -10, 20]
     print('Max sum is {} '.format(max_subarray(aa)))
+    print('Max sum using 2nd method is {} '.format(max_sub_array_2(aa)))
 
     aa = [1, 2, -2, -4, 1, 0, 10]
     print('Max product is {} '.format(max_product_subarray(aa)))
