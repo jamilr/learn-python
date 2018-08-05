@@ -2,6 +2,9 @@
 # You can find more about the game here: https://en.wikipedia.org/wiki/Battleship_(game)
 
 
+__author__ = 'J.R.'
+
+
 class Point:
     idx = -1
     letter = ''
