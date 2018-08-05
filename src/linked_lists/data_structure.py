@@ -17,7 +17,7 @@ class ListNode:
 
         output = '('
         while list_head is not None:
-            output += str(list_head.val)
+            output += ' ' + str(list_head.val) + ' '
             list_head = list_head.next
         output += ')'
         print(output)
