@@ -20,13 +20,13 @@ class AddTwoNumbers:
         cur_node = head_node
         cur_sum = 0
         while l1 is not None or l2 is not None:
-            cur_sum = cur_sum + l1.val if l1 is not None else 0
-            cur_sum = cur_sum + l2.val if l2 is not None else 0
+            cur_sum += l1.val if l1 is not None else 0
+            cur_sum += l2.val if l2 is not None else 0
             cur_node.next = ListNode(cur_sum % 10)
             cur_node = cur_node.next
             cur_sum //= 10
-            l1 = l1.next if l1.next is not None else None
-            l2 = l2.next if l2.next is not None else None
+            l1 = l1.next if l1 is not None and l1.next is not None else None
+            l2 = l2.next if l2 is not None and l2.next is not None else None
 
         if cur_sum > 0:
             cur_node.next = ListNode(cur_sum)
