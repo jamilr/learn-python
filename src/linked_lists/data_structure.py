@@ -6,7 +6,7 @@ __author__ = 'J.R.'
 
 class ListNode:
 
-    def __init__(self, val):
+    def __init__(self, val: int):
         self.val = val
         self.next = None # node to the next node in the linked list
 
